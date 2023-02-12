@@ -1,0 +1,10 @@
+// Vitest Snapshot v1
+
+exports[`PokemonPage > match with snapshot 1`] = `
+"<div data-v-ceac4f0d=\\"\\" class=\\"container\\">
+  <h1 data-v-ceac4f0d=\\"\\">¿¡Quién es ese Pokemón!?</h1>
+  <pokemon-picture-stub data-v-ceac4f0d=\\"\\" pokemonid=\\"1\\" showpokemon=\\"false\\"></pokemon-picture-stub>
+  <pokemon-options-stub data-v-ceac4f0d=\\"\\" pokemons=\\"[object Object],[object Object],[object Object],[object Object]\\"></pokemon-options-stub>
+  <!--v-if-->
+</div>"
+`;
