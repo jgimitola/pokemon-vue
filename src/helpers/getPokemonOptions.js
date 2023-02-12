@@ -29,4 +29,5 @@ const getPokemonOptions = async () => {
   return names;
 };
 
+export { getPokemons, shufflePokemons, slicePokemons, getPokemonsNames };
 export default getPokemonOptions;
