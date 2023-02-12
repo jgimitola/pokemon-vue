@@ -4,6 +4,7 @@ import getPokemonOptions, {
   getPokemons,
   getPokemonsNames,
 } from "@/helpers/getPokemonOptions.js";
+import { pokemons } from "./mocks/pokemons.mock";
 
 describe("getPokemonOptions", () => {
   test("Return correct index array", () => {
@@ -21,12 +22,7 @@ describe("getPokemonOptions", () => {
   test("Return 4 element array", async () => {
     const names = await getPokemonsNames([1, 2, 3, 4]);
 
-    expect(names).toStrictEqual([
-      { id: 1, name: "bulbasaur" },
-      { id: 2, name: "ivysaur" },
-      { id: 3, name: "venusaur" },
-      { id: 4, name: "charmander" },
-    ]);
+    expect(names).toStrictEqual(pokemons);
   });
 
   test("getPokemonOptions should return a shuffled array", async () => {
